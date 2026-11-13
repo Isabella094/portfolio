@@ -1,4 +1,3 @@
-# portfolio
 # 林湘庭｜資料科學作品集
 
 **Hsiang-Ting Lin · Data Science Portfolio**
@@ -121,3 +120,17 @@ python3 scripts/check.py
 前兩項需要 Node.js，用來檢查 JavaScript 語法；第三項使用 Python 標準函式庫，檢查 HTML 直接引用的本機檔案是否存在，不涵蓋 JavaScript 動態產生的所有圖片與連結。
 
 發布前請以瀏覽器確認六張作品卡片、中英文切換、詳細頁導覽、圖片放大、PDF 連結與手機排版。`TESTING.md` 保留先前的測試紀錄，其中四個作品及舊版配色的描述不代表目前版本。
+
+## GitHub Pages 部署
+
+1. 將本資料夾內的內容上傳至 GitHub 儲存庫根目錄，讓 `index.html` 直接位於根目錄。
+2. 提交至 `main` 分支。
+3. 開啟 **Settings → Pages → Build and deployment**。
+4. Source 選 **Deploy from a branch**，Branch 選 **main**，資料夾選 **/ (root)**，按 **Save**。
+5. 等待部署完成，使用 Pages 設定頁提供的網站網址。
+
+一般專案網站的網址形式為 `https://你的帳號.github.io/儲存庫名稱/`。所有網站資源採相對路徑，可放在儲存庫子路徑下；更新並提交檔案後，Pages 會重新部署。
+
+若希望「儲存庫私人、網站公開」，個人帳號需使用支援私人儲存庫 Pages 的 GitHub Pro；GitHub Free 的 Pages 適用於公開儲存庫。私人儲存庫不會隱藏已公開網站傳送至瀏覽器的 HTML、CSS、JavaScript、圖片與 PDF。
+
+部署選項與方案限制請參閱 [GitHub Pages 官方說明](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)。
