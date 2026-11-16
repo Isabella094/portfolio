@@ -61,7 +61,40 @@ window.PROJECTS = [
           "en": "2026 Hotai AI Hackathon certificate of participation"
         }
       }
-    ]
+    ],
+    "assistant": {
+      "title": {
+        "zh": "AI 助理來源歷程問答",
+        "en": "AI Assistant: Q&A with Source History"
+      },
+      "description": {
+        "zh": "借還車 AI 助理以檢索增強生成（RAG）回答營運問題。畫面示範依年度與主題查詢車損案件，從摘要追溯至下方的來源卡片。",
+        "en": "The rental AI assistant uses retrieval-augmented generation (RAG) to answer operational questions. This example filters vehicle damage cases by year and topic and connects the summary to the source cards below."
+      },
+      "gallery": [
+        {
+          "src": "assets/irent/assistant-source-history.png",
+          "alt": {
+            "zh": "借還車 AI 助理的對話歷程、車損查詢結果與來源卡片",
+            "en": "Rental AI assistant conversation history, damage query results, and source cards"
+          }
+        },
+        {
+          "src": "assets/irent/ai-technologies-vision.png",
+          "alt": {
+            "zh": "AI 技術與資源：照片品質檢查、車牌辨識、髒污框選和車損比對",
+            "en": "AI methods: photo quality checks, license plate recognition, dirt localization, and damage comparison"
+          }
+        },
+        {
+          "src": "assets/irent/ai-technologies-assistant.png",
+          "alt": {
+            "zh": "AI 技術與資源：車身偵測、座位髒污篩檢與來源歷程問答",
+            "en": "AI methods: vehicle detection, seat cleanliness screening, and Q&A with source history"
+          }
+        }
+      ]
+    }
   },
   {
     "id": "medical",
