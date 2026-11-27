@@ -31,7 +31,7 @@
     }
     if (!project) { main.innerHTML = `<a href="../index.html">${text.back}</a>`; return; }
     document.title = project.title[language] + ' | ' + text.title;
-    const paragraphs = ['goal', 'features', 'technology', 'contribution', 'results'].map(key => `<section class="copy-section"><h2>${text[key]}</h2><p>${escape(project[key][language])}</p></section>`).join('');
+    const paragraphs = ['goal', 'features', 'technology', 'contribution', 'results'].filter(key => project[key]?.[language]).map(key => `<section class="copy-section"><h2>${text[key]}</h2><p>${escape(project[key][language])}</p></section>`).join('');
     const renderGallery = (figures, offset = 0) => figures.map((figure, index) => `<figure><button class="image-button" type="button" data-image="${index + offset}" aria-label="${text.enlarge} — ${escape(figure.alt[language])}"><img loading="lazy" src="${base + escape(figure.src)}" alt="${escape(figure.alt[language])}"></button><figcaption>${escape(figure.alt[language])}</figcaption></figure>`).join('');
     const figures = project.gallery || [];
     const assistant = project.assistant;
@@ -43,7 +43,7 @@
       ${renderGallery(assistant.gallery, figures.length)}
     </section>` : '';
     const report = projectId === 'portfolio-ml' ? `<section class="report"><h2>${text.report}</h2><p><a href="../assets/reports/finance-final.pdf" target="_blank" rel="noopener">${text.read} ↗</a><a href="../assets/reports/finance-final.pdf" download>${text.download} ↓</a></p></section>` : '';
-    main.innerHTML = `<a class="back" href="../index.html">← ${text.back}</a><article class="project-detail"><h1>${escape(project.title[language])}</h1>${paragraphs}<section class="gallery"><h2>${text.visuals}</h2>${gallery}</section>${assistantSection}${report}</article><a class="back" href="../index.html">← ${text.back}</a>`;
+    main.innerHTML = `<a class="back" href="../index.html">← ${text.back}</a><article class="project-detail"><h1>${escape(project.title[language])}</h1>${project.subtitle ? `<p>${escape(project.subtitle[language])}</p>` : ''}${paragraphs}<section class="gallery"><h2>${text.visuals}</h2>${gallery}</section>${assistantSection}${report}</article><a class="back" href="../index.html">← ${text.back}</a>`;
     main.querySelectorAll('[data-image]').forEach(button => button.addEventListener('click', () => {
       const figure = allFigures[Number(button.dataset.image)];
       const image = dialog.querySelector('img');

@@ -97,13 +97,43 @@ window.PROJECTS = [
     }
   },
   {
+    "id": "eastern-online",
+    "title": {
+      "zh": "東方線上股份有限公司計劃",
+      "en": "Eastern Online Co., Ltd. Project"
+    },
+    "contribution": {
+      "zh": "在東方線上股份有限公司參與未發布系統的開發期間，我與執行長及工程師一同討論系統的開發方向。透過這段經驗，我觀察到不同專業背景的夥伴如何從各自的角度看待同一個問題，也體會到合作時，先聆聽彼此的觀點，再清楚表達自己的想法，有助於團隊釐清問題、建立共識。",
+      "en": "While working on an unreleased system at Eastern Online Co., Ltd., I discussed its development direction with the CEO and engineers. I saw how colleagues from different professional backgrounds approached the same problem. I learned how listening to their perspectives before explaining my own ideas can help a team clarify a problem and reach agreement."
+    },
+    "image": "assets/covers/eastern-online.jpg",
+    "imageAlt": {
+      "zh": "東方線上會議室內的簡報現場",
+      "en": "A presentation in the Eastern Online meeting room"
+    },
+    "gallery": [
+      {
+        "src": "assets/covers/eastern-online.jpg",
+        "alt": {
+          "zh": "東方線上會議室內的簡報現場",
+          "en": "A presentation in the Eastern Online meeting room"
+        }
+      }
+    ],
+    "number": "02",
+    "subtitle": {
+      "zh": "未發布系統開發討論",
+      "en": "Development Discussions for an Unreleased System"
+    }
+  },
+  {
     "id": "medical",
     "title": {
       "zh": "AI 初步醫療問診系統",
       "en": "AI Preliminary Medical Consultation"
     },
     "tag": "AI / Healthcare",
-    "number": "02",
+    "number": "03",
     "goal": {
       "zh": "用自然語言描述不適，取得初步科別建議，並保留問診紀錄。",
       "en": "Describe symptoms in natural language, receive a preliminary specialty suggestion, and save the consultation for later review."
@@ -153,7 +183,7 @@ window.PROJECTS = [
       "en": "Stock Selection and Portfolio Evaluation with Machine Learning"
     },
     "tag": "Machine Learning / Finance",
-    "number": "03",
+    "number": "04",
     "goal": {
       "zh": "運用台灣股票歷史資料建立投資組合，並與台灣加權股價指數比較。",
       "en": "Build portfolios from historical Taiwan equity data and compare them with the Taiwan Weighted Index."
@@ -237,7 +267,7 @@ window.PROJECTS = [
         }
       }
     ],
-    "number": "04"
+    "number": "05"
   },
   {
     "id": "azure-game",
@@ -246,7 +276,7 @@ window.PROJECTS = [
       "en": "Azure Image Recognition Drawing Game"
     },
     "tag": "Azure AI / Interaction",
-    "number": "05",
+    "number": "06",
     "goal": {
       "zh": "把圖像分類做成互動猜圖遊戲，玩家在畫布上畫圖，由模型猜測類別。",
       "en": "Turn image classification into an interactive drawing game in which the model guesses the category of a sketch."
@@ -337,6 +367,6 @@ window.PROJECTS = [
         }
       }
     ],
-    "number": "06"
+    "number": "07"
   }
 ];
